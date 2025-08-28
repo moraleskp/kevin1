@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem auto;
+      max-width: 700px;
+      line-height: 1.6;
+      padding: 0 1rem;
+    }
+    h1 { color: #2c3e50; }
+    form {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    input, textarea {
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      width: 100%;
+    }
+    button {
+      padding: 0.6rem 1rem;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+    .notice {
+      margin-top: 1rem;
+      padding: 0.6rem;
+      background: #f1f1f1;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Test Landing Page</h1>
+  <p>If you can see this page, your hosting setup is working.</p>
+
+  <h2>Contact Form (Test Only)</h2>
+  <form method="post" action="#">
+    <label>
+      Name:
+      <input type="text" name="name" placeholder="Your name">
+    </label>
+    <label>
+      Email:
+      <input type="email" name="email" placeholder="your@email.com">
+    </label>
+    <label>
+      Message:
+      <textarea name="message" rows="5" placeholder="Type a message..."></textarea>
+    </label>
+    <button type="submit">Submit</button>
+  </form>
+
+  <div class="notice">
+    <strong>Note:</strong> This is just a static test page. The form won’t send data unless you hook it up to a backend.
+  </div>
+</body>
+</html>
